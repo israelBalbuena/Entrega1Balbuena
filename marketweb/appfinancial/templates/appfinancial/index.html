@@ -2,14 +2,16 @@
 <html lang="en">
 
 <head>
+    {% load static %}
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Diagoona HTML CSS Template</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> <!-- https://fonts.google.com/ -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
+    <link href="{% static 'appfinancial/css/bootstrap.min.css' %}" rel="stylesheet" /> <!-- https://getbootstrap.com/ -->
     <link href="fontawesome/css/all.min.css" rel="stylesheet" /> <!-- https://fontawesome.com/ -->
-    <link href="css/templatemo-diagoona.css" rel="stylesheet" />
+    <link href="{% static 'appfinancial/css/templatemo-diagoona.css' %}" rel="stylesheet" />
 <!--
 
 TemplateMo 550 Diagoona
@@ -45,14 +47,15 @@ https://templatemo.com/tm-550-diagoona
                                     <a class="nav-link tm-nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="about.html">About</a>
+                                    <a class="nav-link tm-nav-link" href="about.html">Cryptomonedas</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="services.html">Services</a>
+                                    <a class="nav-link tm-nav-link" href="services.html">Bienes Raices</a>
                                 </li>                            
                                 <li class="nav-item">
-                                    <a class="nav-link tm-nav-link" href="contact.html">Contact</a>
+                                    <a class="nav-link tm-nav-link" href="contact.html">Acciones</a>
                                 </li>
+
                             </ul>                            
                         </div>                        
                     </nav>
@@ -97,9 +100,12 @@ https://templatemo.com/tm-550-diagoona
         </div>
     </div>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.backstretch.min.js"></script>
-    <script src="js/templatemo-script.js"></script>
+    <script src="{% static 'appcoder/js/jquery-3.4.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.backstretch.min.js' %}"></script>
+    <script src="{% static 'js/templatemo-script.js' %}"></script>
 </body>
 </html>
+
+
+
